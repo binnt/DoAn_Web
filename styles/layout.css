@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, sans-serif, 'lucida grande';
+}
+/* Thiết kế phần header */
+.header{
+
+    margin: auto;
+}
+
+.img-1{
+    position: relative;
+    left: 30px;
+    top: 25px;
+}
+
+.menu{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.pos {
+    position: relative;
+}
+
+.sub-menu-1 {
+   display: flex;
+   flex-direction: column;
+}
+
+.active {
+    display: none;
+    position: absolute;
+}
+
+.pos:hover .active {
+    display: block;
+}
+
+.menu li a{
+    text-decoration: none;
+    position: relative;
+    color: #010101;
+    font-size: 30px;
+    font-family: 'Metal Mania', cursive;
+    display: block;
+    overflow: hidden;
+    transition: 0.8s all;
+    padding: 14px 30px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.menu li a::before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 8px solid #010101;
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+}
+
+.menu li a:hover::before{
+    right: 0;
+}
+
+/*Tạo button search*/
+.search-box{
+    position: absolute;
+    left: 75%;
+    top: 5%;
+    height: 40px;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    background: #010101;
+    padding: 10px;
+}
+.search-btn{
+    color:#e84118;
+    float:left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: gray;
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 0px;
+
+}
+.search-box:hover> .search-txt{
+    width: 240px;
+    padding:0 6px;
+}
+.search-box:hover>.search-btn{
+    background: white;
+}
+
+/* xử lý footer */
+.footer{
+    clear: both;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+}
+.noi-dung-footer{
+    max-width: 100%;
+    width: 1000px;
+    height:300px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.noi-dung-footer ul{
+    list-style: circle;
+}
+.noi-dung-footer a{
+    text-decoration: none;
+    color:white;
+    margin-bottom: 15px;
+}
+.cot-1{
+    width: 230px;
+    position: absolute;
+}
+.cot-2{
+    width: 270px;
+    position: absolute;
+    margin-left: 250px;
+}
+.cot-3{
+    width: 400px;
+    position:absolute;
+    margin-left: 600px;
+}
+.footer button{
+    border:0;
+    background: #87D37C;
+    padding:2px 15px;
+    color: white;
+    font-size: 18px;
+}
+input [type="email"]{
+    width: 250px;
+    height: 30px;
+    padding: 0 2px;
+}
+.follow-us{
+    width: 350px;
+    height: auto;
+    top: 45%;
+    position: absolute;
+    left: 30%;
+}
+.follow-us img{
+    width: 50px;
+    margin-right: 10px;
+}
